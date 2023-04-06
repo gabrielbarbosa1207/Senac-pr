@@ -22,23 +22,30 @@
             var sortNum = parseInt(Math.random()*2);
             alert('O número sorteado é ' + sortNum);
             if(sortNum == 0){
-                if(jog1>jog2){
-                    alert('o jogador 2, que digitou: ' + jog2 + ' é o ganhador');
-                } else {
-                    alert ('o jogador 1, que digitou: ' + jog1 + ' é o ganhador')
-                    
-                }
+                jog1Gratherjog2();
             } 
             else {
-                if(jog1<jog2){
-                    alert('o jogador 2, que digitou: ' + jog2 + ' é o ganhador');
-                } else {
-                    alert ('o jogador 1, que digitou: ' + jog1 + ' é o ganhador')
-                }
+                jog2Gratherjog1();
             }
         }
 
+        function jog1Gratherjog2(){
+        if(jog1>jog2){
+                alert('o jogador 2, que digitou: ' + jog2 + ' é o ganhador');
+            } else {
+                alert ('o jogador 1, que digitou: ' + jog1 + ' é o ganhador')
+                
+            }
+        }
 
+        function jog2Gratherjog1(){
+        if(jog1>jog2){
+                alert('o jogador 2, que digitou: ' + jog2 + ' é o ganhador');
+            } else {
+                alert ('o jogador 1, que digitou: ' + jog1 + ' é o ganhador')
+                
+            }
+        }
 
     </script>
 </body>

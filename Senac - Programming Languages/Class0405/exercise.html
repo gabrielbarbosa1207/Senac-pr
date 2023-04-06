@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grades</title>
+</head>
+<body>
+    <h1>
+        Grades
+    </h1>
+
+    <script>
+        var n1 = parseFloat(prompt('Type your first grade: '));
+        var n2 = parseFloat(prompt('Type your second grade: '));
+        var n3 = parseFloat(prompt('Type your third grade: '));
+        var n4 = parseFloat(prompt('Type your fourth grade: '));
+
+
+        var f1 = parseFloat(prompt('Type your miss in the first grade: '));
+        var f2 = parseFloat(prompt('Type your miss in the second grade: '));
+        var f3 = parseFloat(prompt('Type your miss in the third grade: '));
+        var f4 = parseFloat(prompt('Type your miss in the fourth grade: '));
+
+
+        var avarege = (n1 + n2 + n3 + n4)/4;
+        var misses = (f1 + f2 + f3 + f4);
+
+
+        alert('Your avarege is: ' + avarege);
+        alert('Your misses are: ' + misses);
+
+        if(avarege>=7 && misses>60){
+            alert('Student were approved')
+        } else {
+            if(avarege<7 && misses>60){
+                alert('Student needs an exame')
+            } else {
+                if(avarege < 7 && misses < 60){
+                    alert('Student were rejected')
+                }
+            }
+        }
+
+
+    </script>
+</body>
+</html>

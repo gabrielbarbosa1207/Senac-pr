@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Eletronic Grades</title>
+</head>
+<body>
+    <h1>
+        Grades
+    </h1>
+
+    <script>
+        var n1 = parseFloat(prompt('Type your first grade: '));
+        var n2 = parseFloat(prompt('Type your second grade: '));
+
+        var avarege = (n1 + n2)/2
+
+        if(n1 == 0 || n2 == 0 || avarege < 6){
+           alert('You were rejected')
+        } else {
+            alert('You were approved with: ' + avarege + ' avarege');
+        }
+    </script>
+    
+</body>
+</html>
