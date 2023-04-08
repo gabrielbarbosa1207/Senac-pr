@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+    <body>
+        
+        <script>
+            const d = new Date();
+
+            let xHora = d.getHours();
+            let xDia = d.getDate();
+            let xMes = d.getMonth();
+            let xAno = d.getFullYear();
+
+            let dia = d.getDay();
+
+            diaSem = new Array(7);
+            diaSem[0] = 'Domingo';
+            diaSem[1] = 'Segunda';
+            diaSem[2] = 'Terça';
+            diaSem[3] = 'Quarta';
+            diaSem[4] = 'Quinta';
+            diaSem[5] = 'Sexta';
+            diaSem[6] = 'Sábado';
+
+            if(xHora > 0 && xHora < 12){
+                    alert('Olá, bom dia hoje é ' + diaSem[dia] + ' , ' + d)
+                } else {
+                    if(xHora > 12 && xHora < 18){
+                        alert('Olá, boa tarde hoje é ' + diaSem[dia] + ' , ' + d)
+                    } else {
+                        if(xHora > 18 && xHora < 0){
+                            alert('Olá, boa noite hoje é ' + diaSem[dia] + ' , ' + d)
+                        }
+                    }
+                }
+
+        </script>
+    </body>
+</body>
+</html>

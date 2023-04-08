@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+
+    </h1>
+
+    <body>
+        
+        <script>
+
+            const d = new Date();
+            
+            
+            let dia = d.getDay();
+            // alert('O dia da semana é '+ dia);
+
+            let hour = d.getHours();
+            // alert('A hora é ' + hour)
+
+            function greets(){
+                if(hour > 0 && hour < 12){
+                    alert('Olá, bom dia hoje é ' + d)
+                } else {
+                    if(hour > 12 && hour < 18){
+                        alert('Olá, boa tarde hoje é ' + d)
+                    } else {
+                        if(hour > 18 && hour < 0){
+                            alert('Olá, boa noite hoje é ' + d)
+                        }
+                    }
+                }                
+            }
+            console.log('Push to github')
+
+        </script>
+
+
+    </body>
+</body>
+</html>
